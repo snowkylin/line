@@ -2,7 +2,7 @@
 
 TensorFlow implementation of paper _LINE: Large-scale Information Network Embedding_ by Jian Tang, et al.
 
-You can [view my slide here](Network_Embedding_with_TensorFlow.pdf). Notice: code shown in the slide are pseudocode, minibatch and negative sampling are omitted in the slide. 
+You can see [my slide](Network_Embedding_with_TensorFlow.pdf) on GDG DevFest 2017 for more detail about LINE and TensorFlow. Notice: code shown in the slide are pseudocode, minibatch and negative sampling are omitted in the slide. 
 
 ## Prerequisites
 
@@ -17,7 +17,6 @@ You can [view my slide here](Network_Embedding_with_TensorFlow.pdf). Notice: cod
 * Put the network file in `data` folder.
 * Run `line.py --graph_file graph.pkl` to start training. `graph.pkl` is the name of your network file.
 * Embedding will be stored in `data/embedding_XXX-order.pkl`. You can load it by `pickle.load()` in python.
-```
 
 ## References
 
