@@ -51,7 +51,7 @@ class DBLPDataLoader:
                         negative_node = self.node_sampling.sampling()
                     elif node_sampling == 'uniform':
                         negative_node = np.random.randint(0, self.num_of_nodes)
-                    if not self.g.has_edge(self.node_index_reversed[negative_node], self.node_index_reversed[edge[1]]):
+                    if not self.g.has_edge(self.node_index_reversed[negative_node], self.node_index_reversed[edge[0]]):
                         break
                 u_i.append(edge[0])
                 u_j.append(negative_node)
